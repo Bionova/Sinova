@@ -22,7 +22,7 @@ ylabel('PC2');
 zlabel('PC3');
 distence=pc(:,1:3);
 [r,c]=size(distence);
-fid=fopen('PCA_result','w');
+fid=fopen('PCA_result.tsv','w');
 for i=1:r
 fprintf(fid,char(celltype(i)));
 fprintf(fid,'\t');
